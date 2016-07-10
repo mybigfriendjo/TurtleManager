@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using TurtleManager.log;
+using TurtleManager.nlog;
 using TurtleManager.nancy;
 
 namespace TurtleManager {

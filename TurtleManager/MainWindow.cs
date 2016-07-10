@@ -2,13 +2,26 @@
 using NLog;
 using TurtleManager.db;
 using TurtleManager.nancy;
+using TurtleManager.sections.sorter;
 
 namespace TurtleManager {
 	public partial class MainWindow : Form {
 		private readonly Logger logger = LogManager.GetCurrentClassLogger();
+
 		public MainWindow() {
 			InitializeComponent();
 
+			SorterGuiManager sorterManager = new SorterGuiManager();
+			sorterManager.UnknownList = sorter_listBoxUnsorted;
+			sorterManager.ListnameList = sorter_listBoxIDLists;
+			sorterManager.ItemList = sorter_listBoxIDsOnList;
+			sorterManager.AddItemButton = sorter_buttonAddIDToList;
+			sorterManager.RemoveItemButton = sorter_buttonRemoveIDFromList;
+			sorterManager.AddListButton = sorter_buttonAddIDList;
+			sorterManager.RemoveListButton = sorter_buttonRemoveIDList;
+			sorterManager.InitEvents();
+			sorterManager.UpdateItemData();
+			SorterItemData.AddListener(sorterManager);
 		}
 
 		private void MainWindow_FormClosing(object sender, FormClosingEventArgs e) {

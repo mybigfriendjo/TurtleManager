@@ -1,4 +1,5 @@
-﻿using System.Data.SQLite;
+﻿using System;
+using System.Data.SQLite;
 using System.IO;
 using NLog;
 
@@ -38,6 +39,10 @@ namespace TurtleManager.db {
 
 		public bool IsOpen() {
 			return conn.State == System.Data.ConnectionState.Open;
+		}
+
+		public SQLiteCommand MakeCommand(string sql) {
+			return new SQLiteCommand(sql, conn);
 		}
 	}
 }

@@ -22,7 +22,7 @@ namespace TurtleManager.nancy.modules {
 				}
 				string itemId = (string) attributes["id"];
 				logger.Debug("got request for id: " + itemId);
-				return Response.AsText(ItemData.GetListNameForItem(itemId), "text/plain");
+				return Response.AsText(SorterItemData.GetListNameForItem(itemId), "text/plain");
 			};
 		}
 	}

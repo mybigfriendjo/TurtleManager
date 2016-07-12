@@ -35,8 +35,6 @@
 			this.sorter_listBoxIDsOnList = new System.Windows.Forms.ListBox();
 			this.sorter_buttonAddIDToList = new System.Windows.Forms.Button();
 			this.sorter_buttonRemoveIDFromList = new System.Windows.Forms.Button();
-			this.sorter_buttonAddIDList = new System.Windows.Forms.Button();
-			this.sorter_buttonRemoveIDList = new System.Windows.Forms.Button();
 			this.tabControlMain.SuspendLayout();
 			this.tabPageSorting.SuspendLayout();
 			this.sorter_tableLayoutMain.SuspendLayout();
@@ -79,8 +77,6 @@
 			this.sorter_tableLayoutMain.Controls.Add(this.sorter_listBoxIDsOnList, 4, 1);
 			this.sorter_tableLayoutMain.Controls.Add(this.sorter_buttonAddIDToList, 1, 2);
 			this.sorter_tableLayoutMain.Controls.Add(this.sorter_buttonRemoveIDFromList, 1, 3);
-			this.sorter_tableLayoutMain.Controls.Add(this.sorter_buttonAddIDList, 3, 2);
-			this.sorter_tableLayoutMain.Controls.Add(this.sorter_buttonRemoveIDList, 3, 3);
 			this.sorter_tableLayoutMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.sorter_tableLayoutMain.Location = new System.Drawing.Point(3, 3);
 			this.sorter_tableLayoutMain.Name = "sorter_tableLayoutMain";
@@ -144,7 +140,6 @@
 			this.sorter_listBoxIDLists.Location = new System.Drawing.Point(228, 28);
 			this.sorter_listBoxIDLists.Name = "sorter_listBoxIDLists";
 			this.sorter_tableLayoutMain.SetRowSpan(this.sorter_listBoxIDLists, 4);
-			this.sorter_listBoxIDLists.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
 			this.sorter_listBoxIDLists.Size = new System.Drawing.Size(169, 458);
 			this.sorter_listBoxIDLists.TabIndex = 4;
 			// 
@@ -179,26 +174,6 @@
 			this.sorter_buttonRemoveIDFromList.Text = "<";
 			this.sorter_buttonRemoveIDFromList.UseVisualStyleBackColor = true;
 			// 
-			// sorter_buttonAddIDList
-			// 
-			this.sorter_buttonAddIDList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.sorter_buttonAddIDList.Location = new System.Drawing.Point(403, 210);
-			this.sorter_buttonAddIDList.Name = "sorter_buttonAddIDList";
-			this.sorter_buttonAddIDList.Size = new System.Drawing.Size(44, 44);
-			this.sorter_buttonAddIDList.TabIndex = 8;
-			this.sorter_buttonAddIDList.Text = "+";
-			this.sorter_buttonAddIDList.UseVisualStyleBackColor = true;
-			// 
-			// sorter_buttonRemoveIDList
-			// 
-			this.sorter_buttonRemoveIDList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.sorter_buttonRemoveIDList.Location = new System.Drawing.Point(403, 260);
-			this.sorter_buttonRemoveIDList.Name = "sorter_buttonRemoveIDList";
-			this.sorter_buttonRemoveIDList.Size = new System.Drawing.Size(44, 44);
-			this.sorter_buttonRemoveIDList.TabIndex = 9;
-			this.sorter_buttonRemoveIDList.Text = "-";
-			this.sorter_buttonRemoveIDList.UseVisualStyleBackColor = true;
-			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,8 +205,6 @@
 		private System.Windows.Forms.ListBox sorter_listBoxIDsOnList;
 		private System.Windows.Forms.Button sorter_buttonAddIDToList;
 		private System.Windows.Forms.Button sorter_buttonRemoveIDFromList;
-		private System.Windows.Forms.Button sorter_buttonAddIDList;
-		private System.Windows.Forms.Button sorter_buttonRemoveIDList;
 	}
 }
 

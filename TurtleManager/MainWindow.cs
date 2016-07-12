@@ -17,10 +17,8 @@ namespace TurtleManager {
 			sorterManager.ItemList = sorter_listBoxIDsOnList;
 			sorterManager.AddItemButton = sorter_buttonAddIDToList;
 			sorterManager.RemoveItemButton = sorter_buttonRemoveIDFromList;
-			sorterManager.AddListButton = sorter_buttonAddIDList;
-			sorterManager.RemoveListButton = sorter_buttonRemoveIDList;
+			sorterManager.InitGui();
 			sorterManager.InitEvents();
-			sorterManager.UpdateItemData();
 			SorterItemData.AddListener(sorterManager);
 		}
 
